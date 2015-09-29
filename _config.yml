@@ -1,0 +1,13 @@
+# Site settings
+title: The Personal Site of Conlin Durbin A.K.A. @cendaeg
+email: conlindurbin@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Conlin Durbin, Javascript developer, hacker, community builder
+  in Indiana. Making other people's awesome happen.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://cendaeg.com" # the base hostname & protocol for your site
+twitter_username: cendaeg
+github_username:  cendaeg
+
+# Build settings
+markdown: kramdown

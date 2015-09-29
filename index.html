@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<h2>Find me online</h2>
+<ul class="">
+  <li><a href="http://twitter.com/cendaeg">Twitter</a></li>
+  <li><a href="http://thecoolindex.tumblr.com">Tumblr</a></li>
+  <li><a href="http://www.quora.com/Cendaeg-Conlin-Durbin">Quora</a></li>
+  <li><a href="https://www.reddit.com/user/conlinism">Reddit</a></li>
+  <li><a href="http://github.com/cendaeg">Github</a></li>
+  <li><a href="http://telegram.me/cendaeg">Telegram</a></li>
+  <li><a href="https://pinboard.in/u:cendaeg">Pinboard</a></li>
+</ul>
+<h2>Recent Posts</h2>
+  {% for post in site.posts %}
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+    <h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+  {% endfor %}
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
