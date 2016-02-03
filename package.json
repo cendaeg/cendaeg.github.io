@@ -1,0 +1,19 @@
+{
+  "name": "ohmfox-personal-site",
+  "version": "1.0.0",
+  "description": "The personal site of Conlin Durbin",
+  "main": "index.html",
+  "scripts": {
+    "test": "httpster"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohmfox/ohmfox.github.io.git"
+  },
+  "author": "Conlin Durbin <conlindurbin@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohmfox/ohmfox.github.io/issues"
+  },
+  "homepage": "https://github.com/ohmfox/ohmfox.github.io#readme"
+}

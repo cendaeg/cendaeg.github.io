@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,700);
+
+:root {
+  --brandColor: #36E2F3;
+  --brand2Color: #F3FF53;
+}
+
+body {
+  font-family:"Work Sans"; 
+}
+
+.lead {
+  color:var(--brandColor);
+  font-size:2em;
+  text-align:center;
+}
+
+.content {
+  width:960px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+.social {
+  display:flex;
+  flex-direction:row;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.social li {
+  padding:1% 2%;
+}
