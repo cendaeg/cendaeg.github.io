@@ -7,11 +7,12 @@
 
 body {
   font-family:"Work Sans"; 
+  color:#222;
 }
 
 .lead {
   color:var(--brandColor);
-  font-size:2em;
+  font-size:65px;
   text-align:center;
 }
 
@@ -23,14 +24,43 @@ body {
   flex-direction: column;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight:200;
+}
+
+.sideBySide {
+  margin:5% 10%;
+  height:400px;
+}
+
+.sideBySide > * {
+  float:left;
+}
+
+.sideBySide h2 {
+  font-size:70px;
+  width:50%;
+}
+
 .social {
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   list-style:none;
   margin:0;
-  padding:0;
+  height:100%;
 }
 
 .social li {
   padding:1% 2%;
+  width:100%;
+  margin:5% 0;
+  font-size:25px;
+  text-align:center;
 }
+
+.social li a {
+  color:#222;
+}
+

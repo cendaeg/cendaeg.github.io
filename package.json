@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ohmfox/ohmfox.github.io/issues"
   },
-  "homepage": "https://github.com/ohmfox/ohmfox.github.io#readme"
+  "homepage": "https://github.com/ohmfox/ohmfox.github.io#readme",
+  "dependencies": {
+    "duo-postcss": "^1.0.0"
+  }
 }
