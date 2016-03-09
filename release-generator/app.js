@@ -13,16 +13,16 @@ function getWords(data) {
       var noun = document.querySelector(".endWord").value;
       return word.charAt(0) === noun.charAt(0).toUpperCase();
     });
-    if(wL.length === 0) {
-      return getAdjective();
-    }
     return wL;
   });
 } 
 
 function selectRandom(words) {
   var randIndex = Math.floor(Math.random() * (words.length));
-  return words[randIndex];
+  adj = words[randIndex];
+  if(!adj) {
+    return getAdjective();
+  }
 }
 
 function getAdjective() {
