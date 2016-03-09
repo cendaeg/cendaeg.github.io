@@ -3,6 +3,22 @@
   <head>
     <title>Release Name Generator</title>
     <link rel="stylesheet" href="app.css" />
+    <script>window.twttr = (function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0],
+t = window.twttr || {};
+if (d.getElementById(id)) return t;
+js = d.createElement(s);
+js.id = id;
+js.src = "https://platform.twitter.com/widgets.js";
+fjs.parentNode.insertBefore(js, fjs);
+
+t._e = [];
+t.ready = function(f) {
+  t._e.push(f);
+};
+
+return t;
+}(document, "script", "twitter-wjs"));</script>
   </head>
   <body>
     <div class="directions">
@@ -13,7 +29,7 @@
       <input type="text" placeholder="Some Noun..." class="endWord" />
       <button class="btn go">Create</button>
     </div>
-    <h1 class="release"></h1>
+    <div class="release"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.11.0/fetch.min.js"></script>
     <script src="app.js"></script>
   </body>

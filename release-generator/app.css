@@ -53,6 +53,22 @@ h1, h2, h3, h4, h5, h6 {
   background:#5EFFEB;
 }
 
-.release {
+.release h1{
   font-size:5em;
+}
+
+.twitter-share-button {
+  float:right;
+  color:#fff;
+  background:#00aced;
+  border-radius:2px;
+  height:50px;
+  width:200px;
+  line-height:50px;
+  text-align:center;
+  text-decoration:none;
+}
+
+.twitter-share-button:visited {
+  color:#fff;
 }
