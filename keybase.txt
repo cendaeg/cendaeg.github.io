@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/cendaeg
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://conlin.xyz
+  * I am cendaeg (https://keybase.io/cendaeg) on keybase.
+  * I have a public key with fingerprint 8C9F DF30 0ECB A283 E381  E8B1 BF3A E0DA EA15 E07D
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101dc7fc18a189cfc1ccf7da836f52ab653e8953a719c2707f255d832a161e156d80a",
+            "fingerprint": "8c9fdf300ecba283e381e8b1bf3ae0daea15e07d",
+            "host": "keybase.io",
+            "key_id": "bf3ae0daea15e07d",
+            "kid": "0101dc7fc18a189cfc1ccf7da836f52ab653e8953a719c2707f255d832a161e156d80a",
+            "uid": "24e56f53164e5f3cc8cafe4b61ff9719",
+            "username": "cendaeg"
+        },
+        "revoke": {
+            "sig_ids": [
+                "68d3d36d5e24f21482d62f927320076f008a1397b98158d7b46f0d0a6966b6830f"
+            ]
+        },
+        "service": {
+            "hostname": "conlin.xyz",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1459276993,
+    "expire_in": 157680000,
+    "prev": "1ec80bc4c2caa9c3e74edcecfe121c519625edbde6a891fd0cf450739c799f95",
+    "seqno": 16,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.51
+Comment: https://keybase.io/crypto
+
+yMJ0AnicrZJtbBRFGMevLRRoWgVjaNJEDJtojCkws7MzO3MkkpoQUVGhTSVK6zE7
+88x102P3uNuWO5sTIoka4yvxDaUQTRAJSCBpAh9MpPiSkEJrYtBi+QBEo0aiEALi
+C6mzjXzzo/tlZ578n9/z29n5vKUh01Q3um77Z9+UX8Z1Y6OXBjKP/3lydMgJYl11
+skNOP8y8oKChnOT6Q+1kHYQR1so3CnOJuVB2oZTxteSEGerKgFECXFAifSyU6yPf
+uJRqTlyJGQZMmeZIOu2OCaM8lIqlMEoslithtCEIgQqkywkQjoEHODBEAtISJKaA
+fG0b++Jy2mHlAlmGpWFsa3aTm9H7j/z/7D0wg3M9oLaPYGYXhijFlTTgBQwbIywh
+DZahFMmNYNMKIquUd2rtTgkG435Ij7Uc5q1z2cmudxjXRBOmKbiecbHHXc1cI1yf
+uAj5zCBkpYnwA8Ex5doPPFvTSDLBWMA4QcbptWw7cDBUM/D0kG4Oj6NCGC2tVJ+2
+UsVSnMQqLth6X5IUs6lSUi2muc0Q5P4l5IIw0vb/2IZBKJXDOHKy2CZVEqZI7FHr
+xoQg7Q5UimEJcmGaoD7jyD7pGBi0SAyKo0B5ylVSCkXA90ArUAawixXFgrkUdKCB
+SS6w0UgZjyKfCOULYQR10m/aFMWWzaynzFumPbZIJgMlcGrHj/XMytQ1ZRpn16cX
+N9M0b/7N63yje27msDo7PTx59egeMmff1EN9K5u75k783Lv2xrVHksr1x77+Y/rd
+hvHKt8vHVreu+HXDmgtb/loQXr/87JzT3ROr191Rq1/7W9vUovc27R5pqrWcfesV
+XpxqbTlxvPP+13reWHKqDVUaezd/+ero/pbXt32y89FLC7etGj9yW2uuNrRr59j5
+v5+Z7Fj8xIdnskMTLw537F7yxfjUss77rlTPNO+ZtXXeIdR2cCt9/64d7MkN08PX
+Crf8sKbj7Z7FXR0PXD39iz+58KsP3pnu/CjfvPLHl1aMnLtCdtx+z8cNqw7UP1y4
+uDHpEvurs7csa48uXHYWfbr8wJvHHmzc98Ld20d2dd+796k7L37//HfrT/106+/P
+Nf8DKB1fXQ==
+=1mhd
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cendaeg
+
+==================================================================
