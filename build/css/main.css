@@ -1,36 +1,51 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,700);
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
-  --brandColor: #1f7980;
+  --brandColor: #fff;
   --brand2Color: #F3FF53;
+  --red: #F26F6F;
+  --blue: #0D1FFF;
 }
 
 body {
   font-family:"Work Sans", sans-serif;
-  color:#222;
+  background:#000;
+  color:#fff;
+  font-size: 18px;
+}
+
+.sidebar {
+
 }
 
 .lead {
   color:var(--brandColor);
-  font-size:2em;
+  font-size:1.75em;
+  font-weight:100;
   text-align:left;
 }
 
 .logo {
-  height:150px;
-  padding:5px;
+  height:100px;
+  padding:25px;
+  border: 1px solid #fff;
 }
 
 .content {
-  width:960px;
+  max-width:960px;
   margin:0 auto;
   display:flex;
   align-items:center;
   flex-direction: column;
+  height:100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight:200;
+  font-weight:300;
 }
 
 .sideBySide {
@@ -68,19 +83,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social li {
-  display:inline-block;
+  display:block;
+  color:#fff;
 }
 
 .services li, .listOfFacts li {
   padding:1% 2%;
   width:100%;
-  margin:5% 0;
-  font-size:25px;
-  text-align:center;
+  font-size:1.5em;
+  font-weight: 100;
 }
 
 .social li a {
-  color:#222;
+  color:#fff;
+  font-weight:200;
+  border-color: #fff;
+  padding-bottom:2px;
 }
 
 .center {
@@ -106,4 +124,58 @@ a {
 
 .todisplay {
   display:none;
+}
+
+.page {
+  background: #222;
+  padding:2% 5%;
+  z-index:3;
+}
+
+.page1 {
+  background: var(--red);
+  z-index:2;
+}
+
+.page2 {
+  background: var(--blue);
+  z-index:1;
+}
+
+.p {
+  min-height:100%;
+  position: absolute;
+  box-shadow: -5px 5px 15px rgba(0,0,0,0.5);
+}
+.page {
+  top:15%;
+  left:27%;
+  width:73%;
+}
+.page1 {
+  width: 85%;
+  padding:5% 2% 1%;
+  top:5%;
+  left:2%;
+}
+.page2 {
+  top:2%;
+  left:25%;
+  width: 75%;
+}
+.social {
+  width:15%;
+}
+.social li {
+  margin-bottom:20px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  body {
+    font-size:16px;
+  }
+  .lead {
+    font-size:1.5em;
+  }
 }
