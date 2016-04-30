@@ -1,19 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,700);
 
 :root {
-  --brandColor: #36E2F3;
+  --brandColor: #1f7980;
   --brand2Color: #F3FF53;
 }
 
 body {
-  font-family:"Work Sans"; 
+  font-family:"Work Sans", sans-serif;
   color:#222;
 }
 
 .lead {
   color:var(--brandColor);
-  font-size:65px;
-  text-align:center;
+  font-size:2em;
+  text-align:left;
+}
+
+.logo {
+  height:150px;
+  padding:5px;
 }
 
 .content {
@@ -46,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius:999px;
 }
 
-.services, .social, .listOfFacts {
+.services, .listOfFacts {
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -56,7 +61,17 @@ h1, h2, h3, h4, h5, h6 {
   height:100%;
 }
 
-.services li, .social li, .listOfFacts li {
+.social {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+.social li {
+  display:inline-block;
+}
+
+.services li, .listOfFacts li {
   padding:1% 2%;
   width:100%;
   margin:5% 0;
@@ -74,4 +89,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .clearfix {
   clear:both;
+}
+
+a {
+  text-decoration:none;
+  color:var(--brandColor);
+  border-bottom:1px solid var(--brandColor);
+}
+
+.clickable {
+  border-bottom:1px solid var(--brandColor);
+  cursor:pointer;
+  padding-right:-20px;
+  margin-right:15px;
+}
+
+.todisplay {
+  display:none;
 }
