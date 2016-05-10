@@ -26,7 +26,7 @@ label {
 
 a[href^="http://"]:not([href*="conlin.xyz"]):before,
 a[href^="https://"]:not([href*="conlin.xyz"]):before{
-    content: "⌲ " 
+  content: "⌲ " 
 }
 
 .blink {
@@ -141,3 +141,41 @@ a {
 
 .sidebar {
 }
+
+.mobileOverlay {
+  display:none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .mobileOverlay {
+    display: block;
+    position: absolute;
+    left: 0;
+    padding:2% 5%;
+    top: 0;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    text-align:center;
+  }
+}
+
+.ascii {
+  font-size: 5px;
+  color: var(--brandColor);
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.profile {
+  height:100px;
+  width:100px;
+  float:left;
+  margin:2%;
+}
+
+.rotate {
+  animation:spin 10s linear infinite;
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
