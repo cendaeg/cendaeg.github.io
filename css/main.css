@@ -150,6 +150,7 @@ a {
   .mobileOverlay {
     display: block;
     position: fixed;
+    overflow: scroll;
     left: 0;
     padding:2% 5%;
     top: 0;
