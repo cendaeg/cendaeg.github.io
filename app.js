@@ -70,4 +70,23 @@ function getRecentMusic() {
   });
 }
 
+function getRecentPost() {
+  return new Promise(function(res, rej) {
+    var url = "/blog/posts.json"
+    var request = new XMLHttpRequest();
+    request.open('GET', url, true);
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 400) {
+        var data = JSON.parse(request.responseText);
+        res(["<a href='/blog/"+data[0]+"'>", data[0], "</a>"]);
+      } else {
+      }
+    };
+    request.onerror = function() {
+    };
+    request.send();
+  });
+}
+
 addToPage("#music", getRecentMusic());
+addToPage("#post", getRecentPost());

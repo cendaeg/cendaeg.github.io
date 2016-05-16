@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ohmfox/ohmfox.github.io#readme",
   "dependencies": {
     "duo-postcss": "^1.0.0"
+  },
+  "devDependencies": {
+    "marked": "^0.3.5"
   }
 }
