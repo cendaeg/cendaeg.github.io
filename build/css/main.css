@@ -1,39 +1,159 @@
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,700|Cutive+Mono);
-
+@import "https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,700|Cutive+Mono";
 * {
   box-sizing: border-box;
 }
-
-:root {
-  --brandColor: #0000FF;
-}
-
 body {
   font-family: "Cutive Mono", monospace;
-  color:#444;
+  color: #fff;
+  background: #2d2d2e;
 }
-
 .logo {
-  height:100px;
-  padding:25px;
-  border: 1px solid var(--brandColor);
+  height: 100px;
+  padding: 25px;
+  border: 1px solid #00f;
 }
-
 label {
-  color:var(--brandColor);
+  color: #00f;
 }
-
-
 a[href^="http://"]:not([href*="conlin.xyz"]):before,
-a[href^="https://"]:not([href*="conlin.xyz"]):before{
-  content: "⌲ " 
+a[href^="https://"]:not([href*="conlin.xyz"]):before {
+  content: "⌲ ";
 }
-
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
 }
-@keyframes blink-animation {
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.content {
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #00f;
+  text-transform: uppercase;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+}
+.sideBySide {
+  margin: 5% 10%;
+  height: 400px;
+}
+.sideBySide > * {
+  max-width: 47%;
+  float: left;
+}
+.sideBySide h2 {
+  font-size: 70px;
+}
+.services,
+.listOfFacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  height: 100%;
+}
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social li {
+  display: block;
+}
+.services li,
+.listOfFacts li {
+  padding: 1% 2%;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+.social li a {
+  font-weight: 200;
+  border-color: #fff;
+  padding-bottom: 2px;
+}
+.center {
+  text-align: center;
+}
+.clearfix {
+  clear: both;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #00f;
+  color: #00f;
+}
+.clickable {
+  border-bottom: 1px solid #00f;
+  color: #00f;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+.todisplay {
+  display: none;
+}
+.p {
+  min-height: 100%;
+}
+.page {
+  padding: 2% 5%;
+}
+.mobileOverlay {
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .mobileOverlay {
+    display: block;
+    position: fixed;
+    overflow: scroll;
+    left: 0;
+    padding: 2% 5%;
+    top: 0;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+}
+.ascii {
+  font-size: 5px;
+  color: #00f;
+  font-weight: bold;
+  pointer-events: none;
+}
+.profile {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin: 2%;
+}
+.rotate {
+  animation: spin 10s linear infinite;
+}
+.glitch_port {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+@-moz-keyframes blink-animation {
   to {
     visibility: hidden;
   }
@@ -43,140 +163,37 @@ a[href^="https://"]:not([href*="conlin.xyz"]):before{
     visibility: hidden;
   }
 }
-
-.content {
-  max-width:960px;
-  display:flex;
-  align-items:center;
-  flex-direction: row;
-  height:100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--brandColor);
-  text-transform: uppercase;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 700;
-}
-
-.sideBySide {
-  margin:5% 10%;
-  height:400px;
-}
-
-.sideBySide > * {
-  max-width:47%;
-  float:left;
-}
-
-.sideBySide h2 {
-  font-size:70px;
-}
-
-.services, .listOfFacts {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  list-style:none;
-  margin:0;
-  height:100%;
-}
-
-.social {
-  list-style: none;
-  margin:0;
-  padding:0;
-}
-
-.social li {
-  display:block;
-}
-
-.services li, .listOfFacts li {
-  padding:1% 2%;
-  width:100%;
-  font-size:1.5em;
-  font-weight: 100;
-}
-
-.social li a {
-  font-weight:200;
-  border-color: #fff;
-  padding-bottom:2px;
-}
-
-.center {
-  text-align:center;
-}
-
-.clearfix {
-  clear:both;
-}
-
-a {
-  text-decoration:none;
-  border-bottom:1px solid var(--brandColor);
-  color: var(--brandColor);
-}
-
-.clickable {
-  border-bottom:1px solid var(--brandColor);
-  color: var(--brandColor);
-  cursor:pointer;
-  margin-right:0.5em;
-}
-
-.todisplay {
-  display:none;
-}
-
-.p {
-  min-height:100%;
-}
-
-.page {
-  padding:2% 5%;
-}
-
-.sidebar {
-}
-
-.mobileOverlay {
-  display:none;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .mobileOverlay {
-    display: block;
-    position: fixed;
-    overflow: scroll;
-    left: 0;
-    padding:2% 5%;
-    top: 0;
-    background: #fff;
-    height: 100%;
-    width: 100%;
-    text-align:center;
+@-o-keyframes blink-animation {
+  to {
+    visibility: hidden;
   }
 }
-
-.ascii {
-  font-size: 5px;
-  color: var(--brandColor);
-  font-weight: bold;
-  pointer-events: none;
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
-
-.profile {
-  height:100px;
-  width:100px;
-  float:left;
-  margin:2%;
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
-
-.rotate {
-  animation:spin 10s linear infinite;
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
-
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@-o-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

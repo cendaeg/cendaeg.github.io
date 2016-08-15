@@ -1,27 +1,23 @@
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,700|Cutive+Mono);
+@import "https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,700|Cutive+Mono"
 
-* {
-  box-sizing: border-box;
-}
+brand-color = #0000ff
 
-:root {
-  --brandColor: #0000FF;
-}
+*
+  box-sizing border-box
 
-body {
-  font-family: "Cutive Mono", monospace;
-  color:#444;
-}
 
-.logo {
-  height:100px;
-  padding:25px;
-  border: 1px solid var(--brandColor);
-}
+body
+  font-family "Cutive Mono", monospace
+  color white
+  background #2D2D2E
 
-label {
-  color:var(--brandColor);
-}
+.logo
+  height 100px
+  padding 25px
+  border 1px solid brand-color
+
+label
+  color brand-color
 
 
 a[href^="http://"]:not([href*="conlin.xyz"]):before,
@@ -53,7 +49,7 @@ a[href^="https://"]:not([href*="conlin.xyz"]):before{
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--brandColor);
+  color: #0000ff;
   text-transform: uppercase;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
@@ -116,13 +112,13 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration:none;
-  border-bottom:1px solid var(--brandColor);
-  color: var(--brandColor);
+  border-bottom:1px solid #0000ff;
+  color: #0000ff;
 }
 
 .clickable {
-  border-bottom:1px solid var(--brandColor);
-  color: var(--brandColor);
+  border-bottom:1px solid #0000ff;
+  color: #0000ff;
   cursor:pointer;
   margin-right:0.5em;
 }
@@ -163,7 +159,7 @@ a {
 
 .ascii {
   font-size: 5px;
-  color: var(--brandColor);
+  color: #0000ff;
   font-weight: bold;
   pointer-events: none;
 }
@@ -180,3 +176,12 @@ a {
 }
 
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.glitch_port {
+  height:100%;
+  width:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:-1;
+}
