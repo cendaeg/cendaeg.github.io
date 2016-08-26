@@ -25,6 +25,7 @@ const path = require('path');
 
   function scaffoldPost(contents) {
     contents = contents.replace(/\{\{title\}\}/g, post.title);
+    contents = contents.replace(/\{\{desc\}\}/g, post.desc);
     contents = contents.replace(/\{\{subtitle\}\}/g, post.subtitle);
     contents = contents.replace(/\{\{date\}\}/g, formatDate());
     contents = contents.replace(/\{\{post\}\}/g, marked(post.post));

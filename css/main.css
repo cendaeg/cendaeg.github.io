@@ -1,75 +1,70 @@
 @import "https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,700|Cutive+Mono"
 
-brand-color = #0000ff
+brand-color = #FFA86B
 
 *
   box-sizing border-box
 
 
 body
-  font-family "Cutive Mono", monospace
-  color white
-  background #2D2D2E
+  font-family "Work Sans", monospace
+  font-weight 400
+  background #f2f2f2
 
-.logo
+.logo 
   height 100px
-  padding 25px
-  border 1px solid brand-color
+  display inline-block
+  text-decoration none
+  border none
+
+.logo img
+  height 100px
+
+header
+  text-align center
 
 label
   color brand-color
 
 
 a[href^="http://"]:not([href*="conlin.xyz"]):before,
-a[href^="https://"]:not([href*="conlin.xyz"]):before{
+a[href^="https://"]:not([href*="conlin.xyz"]):before
   content: "⌲ " 
-}
 
-.blink {
-  animation: blink-animation 1s steps(5, start) infinite;
-  -webkit-animation: blink-animation 1s steps(5, start) infinite;
-}
-@keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
+.blink
+  animation blink-animation 1s steps(5, start) infinite
+  -webkit-animation blink-animation 1s steps(5, start) infinite
 
-.content {
+@keyframes blink-animation 
+  to 
+    visibility: hidden;
+
+@-webkit-keyframes blink-animation
+  to
+    visibility: hidden;
+
+.content
   max-width:960px;
-  display:flex;
-  align-items:center;
-  flex-direction: row;
-  height:100%;
-}
+  margin 0 auto
 
-h1, h2, h3, h4, h5, h6 {
-  color: #0000ff;
+h1, h2, h3, h4, h5, h6
+  color brand-color
   text-transform: uppercase;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
-}
 
-.sideBySide {
+.sideBySide
   margin:5% 10%;
   height:400px;
-}
 
-.sideBySide > * {
+.sideBySide > * 
   max-width:47%;
   float:left;
-}
 
-.sideBySide h2 {
+.sideBySide h2 
   font-size:70px;
-}
 
-.services, .listOfFacts {
+.services, .listOfFacts
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -77,73 +72,78 @@ h1, h2, h3, h4, h5, h6 {
   list-style:none;
   margin:0;
   height:100%;
-}
 
-.social {
-  list-style: none;
-  margin:0;
-  padding:0;
-}
+.social
+  list-style none
+  margin 0 2%
+  padding 0
 
-.social li {
-  display:block;
-}
 
-.services li, .listOfFacts li {
+.icon
+  height 25px 
+  display inline-block
+  vertical-align middle
+
+.services li, .listOfFacts li
   padding:1% 2%;
   width:100%;
   font-size:1.5em;
   font-weight: 100;
-}
 
-.social li a {
+.social li a
   font-weight:200;
   border-color: #fff;
   padding-bottom:2px;
-}
 
-.center {
+.center
   text-align:center;
-}
 
-.clearfix {
+.clearfix
   clear:both;
-}
 
-a {
-  text-decoration:none;
-  border-bottom:1px solid #0000ff;
-  color: #0000ff;
-}
+a
+  text-decoration none
+  border-bottom 1px solid brand-color
+  color brand-color
 
-.clickable {
-  border-bottom:1px solid #0000ff;
-  color: #0000ff;
-  cursor:pointer;
-  margin-right:0.5em;
-}
+.clickable
+  border-bottom 1px solid brand-color
+  color brand-color
+  cursor pointer
+  margin-right 0.5em
 
-.todisplay {
+.todisplay
   display:none;
-}
 
-.p {
-  min-height:100%;
-}
+footer
+  background #fff
+  position fixed
+  bottom 0
+  left 0
+  width 100%
+  padding 2% 5%
+  box-shadow -5px 0 10px rgba(0,0,0,0.22)
+  > *
+    &:first-child
+      float left
+    &:last-child
+      float right
+    vertical-align middle
+    display inline-block
+    margin 0 5%
 
-.page {
-  padding:2% 5%;
-}
+.p
+  max-height 90%
+  height 100%
 
-.sidebar {
-}
+.page
+  padding 2% 5%
 
-.mobileOverlay {
-  display:none;
-}
+.mobileOverlay
+  display none
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .mobileOverlay {
+@media only screen and (min-width: 320px) and (max-width: 479px)
+  .mobileOverlay
     display: block;
     position: fixed;
     overflow: scroll;
@@ -154,34 +154,20 @@ a {
     height: 100%;
     width: 100%;
     text-align:center;
-  }
-}
 
-.ascii {
-  font-size: 5px;
-  color: #0000ff;
-  font-weight: bold;
-  pointer-events: none;
-}
+.ascii
+  font-size 5px
+  color brand-color
+  font-weight bold
+  pointer-events none
 
-.profile {
+.profile
   height:100px;
   width:100px;
   float:left;
   margin:2%;
-}
 
-.rotate {
+.rotate
   animation:spin 10s linear infinite;
-}
 
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-.glitch_port {
-  height:100%;
-  width:100%;
-  position:absolute;
-  left:0;
-  top:0;
-  z-index:-1;
-}
